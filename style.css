@@ -1,0 +1,13 @@
+fieldset {
+    border: none;
+}
+
+button {
+    width: 230px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+div {
+    margin-top: 10px;
+}
