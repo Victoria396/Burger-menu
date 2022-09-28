@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Burger</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <h1 id="">Какой бургер приготовить?</h3>
+            <fieldset>
+                <h2>Размер</h2>
+                <div>
+                    <input type="radio" name="size" value="Big" data-price="100" data-calories="40">
+                    <label for="bigBurg">Большой (100 рублей, 40 калорий)</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="Small" data-price="50" data-calories="20">
+                    <label for="smallBurg">Маленький (50 рублей, 20 калорий)</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Начинка</h2>
+                <div>
+                    <input type="radio" name="add" value="cheese" data-price="10" data-calories="20">
+                    <label for="cheese">Сыр (10 рублей, 20 калорий).</label>
+                </div>
+                <div>
+                    <input type="radio" name="add" value="salad" data-price="20" data-calories="5">
+                    <label for="salad">Салат (20 рублей, 5 калорий)</label>
+                </div>
+                <div>
+                    <input type="radio" name="add" value="potato" data-price="15" data-calories="10">
+                    <label for="potato">Картофелем (15 рублей, 10 калорий)</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h2>Дополнительно</h2>
+                <div>
+                    <input type="checkbox" name="topings" value="spice" data-price="15" data-calories="0">
+                    <label for="spice">Приправа (15 рублей, 0 калорий)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topings" value="mayo" data-price="20" data-calories="5">
+                    <label for="may">Майонез (20 рублей, 5 калорий)</label>
+                </div>
+            </fieldset>
+            <button id="check">Заказать</button>
+            <p>
+                Итого: 
+                <span id="price">0</span>
+                Калории:
+                <span id="calories">0</span>
+            </p>
+        </fieldset>
+    </form>
+    
+    <script src="app.js"></script>
+</body>
+</html>
